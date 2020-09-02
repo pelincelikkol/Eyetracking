@@ -119,7 +119,7 @@ dat_all$saccade <- dat_all$saccade + rand
 #-------------
 
 #means by condition
-dat_all %>% group_by(training,cross) %>% summarize(mean=mean(saccade)) %>%
+dat_all %>% group_by(training,cross) %>% summarize(mean=mean(saccade), sd=sd(saccade)) %>%
   data.frame()
 
 #apply contrast coding
