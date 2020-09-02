@@ -9,7 +9,7 @@
 rm(list=ls())
 N <- 5 #number of participants
 L <- N*2 #number of iterations
-s <- 5 #start from this subject
+s <- 1 #start from this subject
 
 for (i in (((s-1)*2)+1):L){
   #----------------------------------------
